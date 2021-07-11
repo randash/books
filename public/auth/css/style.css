@@ -1,0 +1,180 @@
+@font-face {
+    font-family: helvetica ;
+    src: url(../fonts/helvetica/DINNextLTW23.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+.form-group {
+    margin-bottom: .8rem;
+}
+
+input.form-control, select.form-control{
+    border-radius: 0;
+}
+
+.form-control{
+    height: calc(1.5em + .75rem + 7px);
+    font-size: 14px;
+}
+
+.custom-control{
+    padding-left: 0;
+    padding-right: 1.5rem;
+}
+
+.custom-control-label::before, .custom-control-label::after{
+    left: 0;
+    right: -1.5rem;
+    top: 0px
+}
+
+.custom-control-input{
+    right: 0;
+    left: inherit;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: #0dd5b8;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-size: 14px;
+    font-family: helvetica, sans-serif;
+    text-align: right;
+    color: #333;
+}
+
+
+
+nav.navbar{
+   background-color: #fff;
+}
+
+
+.navbar-nav .nav-item .nav-link{
+    border: 1px solid #ccc;
+    width: 120px;
+    text-align: center;
+    color: #333;
+}
+
+.navbar-nav .nav-item .nav-link.active{
+    background-color: #0bd6b9;
+    border-color: #0bd6b9;
+    color: #fff;
+}
+
+.navbar-nav .nav-item:not(:last-of-type){
+    margin-left: 10px;
+}
+
+.card-register , .card-login ,  .card-resetpassword{
+    margin:100px 0;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    
+}
+.card-register .form-register, .card-login .form-login , .card-resetpassword .form-resetpassword  {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 5px;
+}
+
+.card-register .form-register h1 , .card-login .form-login h1 ,  .card-resetpassword .form-resetpassword h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+.card-register .form-register .row > div , .card-login .form-login .row > div ,  .card-resetpassword .form-resetpassword  .row > div{
+    padding: 5px;
+}
+
+
+.card-register .form-register button.btn,.card-login .form-login  button.btn ,.card-resetpassword .form-resetpassword  button.btn{
+    background-color: #0bd6b9;
+    color: #fff;
+    width: 100%;
+    height: 45px;
+    border-radius: 0;
+}
+
+.link-login a,.link-register a{
+    color: #de413c;
+    text-decoration: underline;
+}
+
+.register-facebook-google button{
+   width: 40px;
+   height: 40px;
+   border: 0;
+   border-radius: 50%;
+   margin: 0 2px;
+   line-height: 45px;
+   color: #fff;
+}
+
+.link-resetpassword a{
+    color: #333;
+}
+
+.google{
+    background-color: #da4234;
+}
+.facebook{
+    background-color: #43549a;
+}
+
+
+.code-resetpassword input{
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+}
+
+.code-resetpassword {
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 991.98px) { 
+    .card-register, .card-login, .card-resetpassword {
+        margin: 50px 0;
+        min-height: inherit;
+    }
+
+    .navbar-toggler i{
+        font-size: 30px;
+    }
+
+    .navbar-nav .nav-item .nav-link{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .navbar-nav .nav-item:not(:last-of-type) {
+        margin-left: 0;
+    }
+
+    .navbar-nav .nav-item:not(:first-of-type) {
+        margin-bottom: 10px;
+    }
+
+    
+}
